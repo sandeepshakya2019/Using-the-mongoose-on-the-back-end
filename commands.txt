@@ -1,0 +1,25 @@
+- To Run on the port use the command (in the terminal like gitbash)- mongod  
+- To Run the shell use the command - mongo
+- To see the present database use the command - show dbs
+- To create a databse use the command - use database_name
+- To check the current working database - db
+
+*********************** CRUD Command in MongoDB ******************************
+- Enter a new record in databse (suppose shopDB )and collection (suppose products)
+	we will use the command - (here collection is products use products instead of collection)
+		db.collection.insertOne({
+			_id : 3,
+			Products : "Rubber",
+			Quantity : 20,
+			Price : 3.0
+		})
+
+- To show the collections in database (database is shopDB and collection is products)
+	show collections
+
+- To find the data use command 
+ 	db.collection.find()
+ -To update the data
+ 	db.collection.updateOne({_id:1},{$set:{Reviews:"Good"}})
+ -To delete the data 
+ 	db.collection.deleteOne({})
